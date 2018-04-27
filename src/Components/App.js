@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Title title={'PhotoWall'} />
+          <Title title={'Air Canada Vacations'} />
         </header>
 
         <PhotoWall posts={posts} />
