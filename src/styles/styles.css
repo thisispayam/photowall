@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+html{
+    font-size:10px;
+}
 h1{
     font-family: 'Indie Flower', cursive ;
-    margin:auto;
     text-align: center;
+    font-size:4rem;
+    margin: 2rem 0;
 }
