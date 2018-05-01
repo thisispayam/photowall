@@ -42,15 +42,20 @@ figcaption{
     justify-content: center;
 }
 
-.remove-btn{
+button{
     flex-basis: 48%;
     color:red;
     font-size:15px;
     border: 2px solid #f2f2f2;
     line-height: 2;
     padding:5px;
+    width: 50%;
+    cursor: pointer;
 }
 
+button:hover{
+    border-color:#E65A5A;
+}
 .add-icon{
     margin: 20px auto;
     text-align: center;
@@ -62,4 +67,33 @@ figcaption{
     color:transparent;
     cursor: pointer;
     width:0;
+}
+.form {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 45px;
+    text-align: center;
+}
+.form input{
+    font-family: sans-serif;
+    background: #f2f2f2;
+    width: 100%;
+    border:none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin:0 0 15px;
+    font-size: 14px;
+}
+
+.form button{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background: #0093b3;
+    color:#fff;
+    border: none;
+    font-size: 14px;
+}
+
+.form button:hover {
+    background: #7C8F9E;
 }
