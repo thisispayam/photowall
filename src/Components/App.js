@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Title from './Title';
 import PhotoWall from './PhotoWall';
+import AddPhoto from './AddPhoto';
+import {Route} from 'react-router-dom';
 import '../styles/styles.css';
 
 
@@ -33,17 +35,25 @@ class App extends Component {
     this.setState((state)=>({
     posts: state.posts.filter(post => post !== postRemoved) /*filtering out the removedPost from the array --- render() will call again right after*/
     }))
-
   }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Title title={'Air Canada Vacations'} />
-        </header>
+      {/* multiple components in a div use render prop to route  */}
+        <Route exact path = "/" render={() => (
+            <div>
+              <header className="App-header">
+                <Title title={'Air Canada Vacations'} />
+              </header>
+              <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/> {/*passing the removePhoto function as prop to photowall */} 
+            </div>
+        )} />
 
-        <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} /> {/*passing the removePhoto function as prop to photowall */} 
+        <Route path ="/AddPhoto" component = {AddPhoto} /> {/* single component use component prop to render */}
+
       </div>
+      
     );
   }
 }
