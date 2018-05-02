@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Photo(props){
     const post = props.post;
     return <figure> 
-                <img src={post.imageLink} alt={post.description}/>
+                <img src={post.imageUrl} alt={post.description}/>
                 <figcaption>
                     <p>{post.description}</p>
                 </figcaption>
