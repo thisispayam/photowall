@@ -24,7 +24,7 @@ class AddPhoto extends Component {
         return (
             
             <div className="form">
-                <h1>Photowall</h1>
+                <h1>Add to the Photowall</h1>
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" placeholder="Image url" name="link"/>
                     <input type="text" placeholder="Description" name="description"/>
