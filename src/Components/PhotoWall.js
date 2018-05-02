@@ -8,7 +8,11 @@ function PhotoWall(props){
         <div>
             <Link to="/AddPhoto" className="add-icon"> </Link>
             <div className='photo-grid'>
-            { props.posts.map((post, index) => <Photo key={index} post={post} onRemovePhoto={props.onRemovePhoto}/>) } {/*accessing this method coming from App.js in all the photos */}
+            { props.posts
+                .sort(function(x,y){
+                    return y.id - x.id
+                })
+                .map((post, index) => <Photo key={index} post={post} onRemovePhoto={props.onRemovePhoto}/>) } {/*accessing this method coming from App.js in all the photos */}
             </div>
         </div>
     )
