@@ -30,6 +30,30 @@ class App extends Component {
           id: 4,
           description: "Mr. Lizard",
           imageUrl: "https://payam.ca/img/portfolio/photo/8.jpg"
+        }, {
+          id: 5,
+          description: "Kimono Exhibition!",
+          imageUrl: "https://payam.ca/img/portfolio/photo/9.jpg"
+        }, {
+          id: 6,
+          description: "Sand Riding!",
+          imageUrl: "https://payam.ca/img/portfolio/photo/10.jpg"
+        }, {
+          id: 7,
+          description: "Praying Kids!",
+          imageUrl: "https://payam.ca/img/portfolio/photo/1.jpg"
+        }, {
+          id: 8,
+          description: "Stonehenge!",
+          imageUrl: "https://payam.ca/img/portfolio/photo/11.jpg"
+        }, {
+          id: 9,
+          description: "Venice!",
+          imageUrl: "https://payam.ca/img/portfolio/photo/12.jpg"
+        }, {
+          id: 10,
+          description: "Towers!",
+          imageUrl: "https://payam.ca/img/portfolio/photo/4.jpg"
         }]
     }
     this.removePhoto = this.removePhoto.bind(this);
